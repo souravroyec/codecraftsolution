@@ -1,44 +1,54 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { Linkedin, Github, Mail, Code, Coffee, Lightbulb } from 'lucide-react';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Linkedin, Github, Mail, Code, Coffee, Lightbulb } from "lucide-react";
 
 const founders = [
   {
-    name: 'Subhrajit Mukherjee',
-    role: 'Co-Founder & Full Stack Developer',
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'Passionate about creating scalable web applications and AI-powered solutions. Specializes in MERN stack development and has a keen eye for modern UI/UX design.',
-    expertise: ['React & Next.js', 'Node.js & Express', 'MongoDB & PostgreSQL', 'AI Integration'],
+    name: "Subhrajit Mukherjee",
+    role: "Co-Founder & Full Stack Developer",
+    image: "/Images/Subh.png",
+    bio: "Passionate about creating scalable web applications and AI-powered solutions. Specializes in MERN stack development and has a keen eye for modern UI/UX design.",
+    expertise: [
+      "React & Next.js",
+      "Node.js & Express",
+      "MongoDB & PostgreSQL",
+      "AI Integration",
+    ],
     social: {
-      linkedin: 'https://linkedin.com/in/subhrajit-mukherjee',
-      github: 'https://github.com/subhrajit-mukherjee',
-      email: 'subhrajit@codecraft-solutions.com'
+      linkedin: "https://linkedin.com/in/subhrajit-mukherjee",
+      github: "https://github.com/subhrajit-mukherjee",
+      email: "subhrajit@codecraft-solutions.com",
     },
     personality: [
-      { icon: Code, trait: 'Clean Code Advocate' },
-      { icon: Coffee, trait: 'Coffee Enthusiast' },
-      { icon: Lightbulb, trait: 'Innovation Driver' }
-    ]
+      { icon: Code, trait: "Clean Code Advocate" },
+      { icon: Coffee, trait: "Coffee Enthusiast" },
+      { icon: Lightbulb, trait: "Innovation Driver" },
+    ],
   },
   {
-    name: 'Saurav Roy',
-    role: 'Co-Founder & Full Stack Developer',
-    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'Expert in mobile app development and automation workflows. Loves building efficient systems and has extensive experience in React Native and workflow automation.',
-    expertise: ['React Native', 'Kotlin & Android', 'n8n Automation', 'System Architecture'],
+    name: "Saurav Roy",
+    role: "Co-Founder & Full Stack Developer",
+    image: "/Images/roy.jpg",
+    bio: "Expert in mobile app development and automation workflows. Loves building efficient systems and has extensive experience in React Native and workflow automation.",
+    expertise: [
+      "React Native",
+      "Kotlin & Android",
+      "n8n Automation",
+      "System Architecture",
+    ],
     social: {
-      linkedin: 'https://linkedin.com/in/saurav-roy',
-      github: 'https://github.com/saurav-roy',
-      email: 'saurav@codecraft-solutions.com'
+      linkedin: "https://linkedin.com/in/saurav-roy",
+      github: "https://github.com/saurav-roy",
+      email: "saurav@codecraft-solutions.com",
     },
     personality: [
-      { icon: Code, trait: 'Mobile Expert' },
-      { icon: Coffee, trait: 'Problem Solver' },
-      { icon: Lightbulb, trait: 'Automation Guru' }
-    ]
-  }
+      { icon: Code, trait: "Mobile Expert" },
+      { icon: Coffee, trait: "Problem Solver" },
+      { icon: Lightbulb, trait: "Automation Guru" },
+    ],
+  },
 ];
 
 export function FoundersSection() {
@@ -54,14 +64,15 @@ export function FoundersSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Meet Our{' '}
+            Meet Our{" "}
             <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
               Founders
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Two passionate developers with a shared vision of creating exceptional 
-            digital experiences and helping businesses thrive in the digital world.
+            Two passionate developers with a shared vision of creating
+            exceptional digital experiences and helping businesses thrive in the
+            digital world.
           </p>
         </motion.div>
 
@@ -95,7 +106,9 @@ export function FoundersSection() {
 
                 {/* Name & Role */}
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{founder.name}</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    {founder.name}
+                  </h3>
                   <p className="text-teal-600 font-medium">{founder.role}</p>
                 </div>
 
@@ -106,7 +119,9 @@ export function FoundersSection() {
 
                 {/* Expertise */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-3 text-center">Expertise</h4>
+                  <h4 className="text-sm font-semibold text-gray-900 mb-3 text-center">
+                    Expertise
+                  </h4>
                   <div className="flex flex-wrap justify-center gap-2">
                     {founder.expertise.map((skill, skillIndex) => (
                       <span
@@ -127,7 +142,9 @@ export function FoundersSection() {
                         <div className="w-10 h-10 mx-auto mb-2 rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 p-2">
                           <trait.icon className="h-6 w-6 text-white" />
                         </div>
-                        <span className="text-xs text-gray-600">{trait.trait}</span>
+                        <span className="text-xs text-gray-600">
+                          {trait.trait}
+                        </span>
                       </div>
                     ))}
                   </div>
