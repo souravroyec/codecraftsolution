@@ -11,10 +11,9 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
   { name: 'Projects', href: '/projects' },
-  { name: 'WordPress Migration', href: '/wordpress-migration' },
   { name: 'Pricing', href: '/pricing' },
-  { name: 'About', href: '/about' },
   { name: 'Blog', href: '/blog' },
+  { name: 'About', href: '/about' },
 ];
 
 export function Navigation() {

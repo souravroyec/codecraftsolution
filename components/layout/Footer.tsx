@@ -11,7 +11,7 @@ const navigation = {
     { name: 'Bug Fixes & Maintenance', href: '/services#maintenance' },
   ],
   company: [
-    { name: 'About Us', href: '/about' },
+    { name: 'About', href: '/about' },
     { name: 'Projects', href: '/projects' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'Blog', href: '/blog' },
