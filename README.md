@@ -202,5 +202,5 @@ For technical support or customization requests:
 
 ---
 
-© 2024 CodeCraft Solutions. All rights reserved.
+© 2025 CodeCraft Solutions. All rights reserved.
 ```
